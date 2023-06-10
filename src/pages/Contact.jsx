@@ -5,7 +5,7 @@ import CommonSection from "../components/UI/CommonSection";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
-
+import { contactFormMail } from "../api";
 import "../styles/contact.css";
 
 const socialLinks = [
