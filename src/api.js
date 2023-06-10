@@ -22,6 +22,11 @@ export async function getBlog(id) {
   return data;
 }
 
+export async function contactFormMail(body) {
+  const { data } = await axios.post(`/mail`, body);
+  return data;
+}
+
 export async function postReservation(body) {
   const { data } = await axios.post(`/book`, body);
   return data;
