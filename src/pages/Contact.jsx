@@ -60,6 +60,11 @@ const Contact = () => {
       progress: undefined,
     });
     form.current.reset();
+    setName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
+    
   };
 
   return (
