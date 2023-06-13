@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col, FormGroup, Input } from "reactstrap";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
-import React, { useRef ,useState} from "react";
-
+import React, { useRef, useState } from "react";
+import { toast } from "react-toastify";
 import "../styles/contact.css";
 import { contactFormMail } from "../api";
 
@@ -42,7 +42,7 @@ const Contact = () => {
     //   .then(
     //     (result) => {
     //       console.log(result.text);
-    //     
+    //
     //     },
     //     (error) => {
     //       alert(
@@ -50,15 +50,15 @@ const Contact = () => {
     //       );
     //     }
     //   );
-      toast.success("Message sent, We will contact you shortly", {
-             position: toast.POSITION.TOP_CENTER,
-             autoClose: 5000,
-             hideProgressBar: true,
-             closeOnClick: true,
-             pauseOnHover: true,
-             draggable: true,
-             progress: undefined,
-           });
+    toast.success("Message sent, We will contact you shortly", {
+      position: toast.POSITION.TOP_CENTER,
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
     form.current.reset();
   };
 
