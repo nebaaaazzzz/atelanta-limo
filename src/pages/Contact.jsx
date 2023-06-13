@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col, FormGroup, Input } from "reactstrap";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 import "../styles/contact.css";
 import { contactFormMail } from "../api";
