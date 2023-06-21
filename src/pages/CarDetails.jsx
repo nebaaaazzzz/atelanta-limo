@@ -56,11 +56,7 @@ const CarDetails = () => {
               <div className="car__info">
                 <h2 className="section__title">{data.name}</h2>
 
-                <div className=" d-flex align-items-center gap-5 mb-4 mt-3">
-                  <h6 className="rent__price fw-bold fs-4">
-                    ${data.pricePerDay}.00 / Day
-                  </h6>
-                </div>
+                
 
                 <p className="section__description">{data.description}</p>
 
@@ -68,53 +64,18 @@ const CarDetails = () => {
                   className=" d-flex align-items-center mt-3"
                   style={{ columnGap: "4rem" }}
                 >
-                  <span className=" d-flex align-items-center gap-1 section__description">
-                    <i
-                      class="ri-roadster-line"
-                      style={{ color: "#f9a826" }}
-                    ></i>{" "}
-                    {data.model}
-                  </span>
+                 
 
-                  <span className=" d-flex align-items-center gap-1 section__description">
-                    <i
-                      class="ri-settings-2-line"
-                      style={{ color: "#f9a826" }}
-                    ></i>{" "}
-                    {data.automatic ? "automatic" : "manual"}
-                  </span>
+                  
 
-                  <span className=" d-flex align-items-center gap-1 section__description">
-                    <i
-                      class="ri-timer-flash-line"
-                      style={{ color: "#f9a826" }}
-                    ></i>{" "}
-                    {data.speed}
-                  </span>
+                 
                 </div>
 
                 <div
                   className=" d-flex align-items-center mt-3"
                   style={{ columnGap: "2.8rem" }}
                 >
-                  {data.gps && (
-                    <span className=" d-flex align-items-center gap-1 section__description">
-                      <i
-                        class="ri-map-pin-line"
-                        style={{ color: "#f9a826" }}
-                      ></i>{" "}
-                      {"gps navigation"}
-                    </span>
-                  )}
-                  {data.heatedSeat && (
-                    <span className=" d-flex align-items-center gap-1 section__description">
-                      <i
-                        class="ri-wheelchair-line"
-                        style={{ color: "#f9a826" }}
-                      ></i>{" "}
-                      {"Heated Seat"}
-                    </span>
-                  )}
+                 
                 </div>
               </div>
             </Col>
