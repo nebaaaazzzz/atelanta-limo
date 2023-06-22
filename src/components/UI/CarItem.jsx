@@ -18,7 +18,7 @@ const CarItem = (props) => {
         <div className="car__item-content mt-4">
           <h4 className="section__title" >{name}</h4> 
           <div className="car__item-info d-flex  justify-content-between mt-3 mb-4">
-            <h1 >Price Per Day : {pricePerDay}$</h1>
+            <h5>Price Per Day : {pricePerDay}$</h5>
             
           </div>
 
