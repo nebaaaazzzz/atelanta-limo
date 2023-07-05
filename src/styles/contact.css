@@ -5,6 +5,9 @@
   font-weight: 500;
   font-size: 1.2rem;
 }
+.errorMsg {
+  color: red;
+}
 
 .contact__btn {
   padding: 7px 15px;
