@@ -48,9 +48,7 @@ const Header = () => {
               </div>
             </Col>
 
-            <Col lg="6" md="6" sm="6">
-            
-            </Col>
+            <Col lg="6" md="6" sm="6"></Col>
           </Row>
         </Container>
       </div>
@@ -65,7 +63,9 @@ const Header = () => {
                   <Link to="/home" className=" d-flex align-items-center gap-2">
                     <i class="ri-car-line"></i>
                     <span>
-                    Atlanta<br />Limo 
+                      ABC
+                      <br />
+                      Limo
                     </span>
                   </Link>
                 </h1>
@@ -90,8 +90,7 @@ const Header = () => {
                   <i class="ri-time-line"></i>
                 </span>
                 <div className="header__location-content">
-                  
-                  <h7>    24/7</h7>
+                  <h7> 24/7</h7>
                 </div>
               </div>
             </Col>
@@ -136,8 +135,6 @@ const Header = () => {
                 ))}
               </div>
             </div>
-            
-
           </div>
         </Container>
       </div>

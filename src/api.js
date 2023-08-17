@@ -1,5 +1,5 @@
 import * as ax from "axios";
-export const BASE_URL = "https://limo-service-bacend-3.onrender.com/";
+export const BASE_URL = "https://abc-limo-server.onrender.com/";
 const axios = ax.default.create({
   baseURL: BASE_URL,
 });
@@ -12,7 +12,7 @@ export async function getVehicle(id) {
   const { data } = await axios.get(`/vehicle/${id}`);
   return data;
 }
-export async function getBlogs(page = 1, limit =3) {
+export async function getBlogs(page = 1, limit = 3) {
   const { data } = await axios.get(`/blog?page=${page}&limit=${limit} `);
   return data;
 }
