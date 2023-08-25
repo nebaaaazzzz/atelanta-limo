@@ -79,7 +79,7 @@ const Header = () => {
                 </span>
                 <div className="header__location-content">
                   <h4>United States</h4>
-                  <h6>Atlanta, Georgia, USA</h6>
+                  <h6>Seattle, Washington, USA</h6>
                 </div>
               </div>
             </Col>

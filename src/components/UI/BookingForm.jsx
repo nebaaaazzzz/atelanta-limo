@@ -16,6 +16,7 @@ const schema = yup
     phoneNumber: yup.string().required(),
     fromAddress: yup.string().required(),
     toAddress: yup.string().required(),
+    driverGender: yup.string().required(),
     personCount: yup.number().required(),
     luggageCount: yup.number().required(),
     date: yup.date().required(),
@@ -45,7 +46,10 @@ const BookingForm = ({ id }) => {
     });
   };
   if (mutation.isSuccess) {
-    toast("Reservation Successful", { type: "success" });
+    toast(
+      "Your booking is confirmed. Our team will be in touch shortly. Thank you for choosing us!",
+      { type: "success" }
+    );
     mutation.reset();
     reset();
   }
@@ -137,7 +141,6 @@ const BookingForm = ({ id }) => {
           placeholder="luggage count"
         />
       </FormGroup>
-
       <FormGroup className="booking__form d-inline-block me-4 mb-4">
         <input
           className={` ${errors.date ? "border-danger" : ""}`}
@@ -146,6 +149,7 @@ const BookingForm = ({ id }) => {
           placeholder="Journey Date"
         />
       </FormGroup>
+
       <FormGroup className="booking__form d-inline-block ms-1 mb-4">
         <input
           className={`time__picker ${errors.time ? "border-danger" : ""}`}
@@ -153,6 +157,23 @@ const BookingForm = ({ id }) => {
           {...register("time")}
           placeholder="Journey Time"
         />
+      </FormGroup>
+      <FormGroup className="booking__form d-inline-block">
+        <select
+          className={` ${errors.driverGender ? "border-danger" : ""}`}
+          {...register("driverGender")}
+        >
+          <option value="">Select Driver Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        {/* <input
+          className={` ${errors.luggageCount ? "border-danger" : ""}`}
+          type="text"
+          {...register("luggageCount")}
+          placeholder="luggage count"
+        /> */}
       </FormGroup>
 
       <FormGroup>
